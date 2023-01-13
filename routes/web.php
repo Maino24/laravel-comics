@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/comics', function () {
     return view('pages.comics.index');
 })->name('index.comics');
+
