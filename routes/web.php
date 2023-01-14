@@ -233,7 +233,7 @@ Route::get('/comics', function () {
         ],
     ];
 
-    dump($comics);
+    //dump($comics);
 
     return view('pages.comics.index', compact('comics'));
 })->name('index.comics');
