@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('pages.home');
+})->name('home');
+
+Route::get('/comics', function () {
 
     $comics = [
         [
@@ -229,10 +233,8 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('pages.home');
-})->name('home');
+    dump($comics);
 
-Route::get('/comics', function () {
-    return view('pages.comics.index');
+    return view('pages.comics.index', compact('comics'));
 })->name('index.comics');
 
