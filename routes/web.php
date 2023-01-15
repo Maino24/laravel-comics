@@ -245,3 +245,19 @@ Route::get('/comics', function () {
 Route::get('views.components.footer', function () {
     return view('components.footer');
 });
+
+
+
+//SINGOLI FUMETTI
+Route::get('/index/{id}', function($id){
+
+    $comics = config('comics');
+
+    if( is_numeric($id) && $id >= 0 && $id < count($comics) ){
+        $fumetto_singolo = $comics[$id];
+    }else{
+        abort(404);
+    }
+
+    return view('pages.comics.show', compact('fumetto_singolo'));
+})->name('show.comics');

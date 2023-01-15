@@ -64,10 +64,10 @@
                     </div>
                     <div class="containerSocial2">
                         <img class="social" src="{{ asset('img/footer-facebook.png')}}" alt="">
-                        <img class="social" src="" alt="">
-                        <img class="social" src="" alt="">
-                        <img class="social" src="" alt="">
-                        <img class="social" src="" alt="">
+                        <img class="social" src="{{ asset('img/footer-youtube.png')}}" alt="">
+                        <img class="social" src="{{ asset('img/footer-twitter.png')}}" alt="">
+                        <img class="social" src="{{ asset('img/footer-pinterest.png')}}" alt="">
+                        <img class="social" src="{{ asset('img/footer-periscope.png')}}" alt="">
                     </div>
                 </div>
             </div>

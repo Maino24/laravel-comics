@@ -7,14 +7,15 @@
     
     <div class="container">
         <div class="row">
-            @foreach ($comics as $elem)
+            @foreach ($comics as $id => $elem)
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <a href="">
+
+                        <a href="{{route('show.comics', ['id' => 'id'])}}">
                             <img src="{{ $elem['thumb']}}" class="card-img-top" alt="...">
-                        </a>
                         <div class="card-body">
                         <h5 class="card-title">{{ $elem['title']}}</h5>
+                        </a>
                         <!--<p class="card-text">{{ $elem['description']}}</p>-->
                         </div>
                     </div>
