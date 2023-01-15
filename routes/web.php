@@ -242,3 +242,6 @@ Route::get('/comics', function () {
     return view('pages.comics.index', compact('comics'));
 })->name('index.comics');
 
+Route::get('views.components.footer', function () {
+    return view('components.footer');
+});
