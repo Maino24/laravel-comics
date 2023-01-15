@@ -2,3 +2,4 @@
 
 @section('title-page', "DC Comics - Home")
     
+
