@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::get('views.components.main', function () {
+    return view('components.main');
+});
+
 Route::get('/comics', function () {
 
     $comics = [

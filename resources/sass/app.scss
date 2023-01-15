@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .background-img{
     background-image: url('/img/jumbotron.jpg');
     width: 100%;
@@ -23,3 +29,35 @@
     width: 100%;
 }
 
+.main{
+    .backgroundHomeMain{
+        background-color: black;
+        color: white;
+        padding: 100px;
+        text-align: center;
+    }
+
+    nav{
+        background-color: #0282F9;
+        padding: 50px 0;
+        ul{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            
+    
+            li{
+                list-style: none;
+    
+                .img{
+                    width: 50px;
+                    height: 70px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    };
+
+
+}
