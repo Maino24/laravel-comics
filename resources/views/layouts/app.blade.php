@@ -14,7 +14,6 @@
     </header>
     <main>
         @yield('main-content')
-        @include('components.main')
     </main>
     <footer>
         @include('components.footer')

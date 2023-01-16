@@ -1,5 +1,5 @@
 <div class="main">
-    <h3 class="backgroundHomeMain">NON HAI SELEZIONATO NIENTE</h3>
+    
     <nav>
         <ul>
             <li><img class="img" src="{{ asset('img/buy-comics-digital-comics.png')}}" alt=""> <span>DIGITAL COMICS</span> </li>
